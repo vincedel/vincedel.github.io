@@ -21,6 +21,12 @@
         h1, h5 {
             font-weight: bold;
         }
+        .header h1 {
+            margin-bottom: 0;
+        }
+        .header h1, .header h2 {
+            margin-top: 0;
+        }
         .dark {
             color: #663399;
         }
@@ -55,6 +61,8 @@
 			border-radius: 0;
 			box-shadow: none;
 			background: none;
+            width: 95px;
+            background: #cccccc url(images/star.png);
 		}
 		.progress-bar {
 			background-image: url(images/star.png);
@@ -66,7 +74,7 @@
 			-webkit-box-shadow: none;
 		}
 		.progress-bar-warning {
-			background-color: #663399;	
+			background-color: #663399;
 		}
     </style>
 </head>
@@ -161,6 +169,22 @@
 								</div>
 							</div>
 						</dd>
+                        <dt>Git</dt>
+                        <dd>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-warning progress-bar-striped" style="width: 60%">
+                                    <span class="sr-only">60%</span>
+                                </div>
+                            </div>
+                        </dd>
+                        <dt>Behat</dt>
+                        <dd>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-warning progress-bar-striped" style="width: 60%">
+                                    <span class="sr-only">60%</span>
+                                </div>
+                            </div>
+                        </dd>
                     </dl>
 					<hr />
 					<h4 class="dark">Bases de <span class="light">données</span></h4>
@@ -281,14 +305,6 @@
 								</div>
 							</div>
 						</dd>
-                        <dt>GIT</dt>
-                        <dd>
-                            <div class="progress">
-                                <div class="progress-bar progress-bar-warning progress-bar-striped" style="width: 60%">
-                                    <span class="sr-only">60%</span>
-                                </div>
-                            </div>
-                        </dd>
                         <dt>RabbitMQ</dt>
                         <dd>
                             <div class="progress">
@@ -431,6 +447,8 @@
 					<span class="label label-info">RabbitMQ</span>
 					<span class="label label-primary">jQuery</span>
 					<span class="label label-warning">Responsive Design</span>
+                    <span class="label label-primary">Git</span>
+                    <span class="label label-primary">Behat</span>
 					<h5>Chef de projet Web /// 2011 -&rsaquo; 2013</h5>
 					<p>
                         <i>Réalisation des sites Web de co-conception</i>
