@@ -1,349 +1,421 @@
 <!DOCTYPE html>
-<html>
-<head lang="en">
+<html lang="en">
+
+<head>
+
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Vincent Delevoye /// Développeur Web</title>
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" />
-	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css" />
-    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Yanone+Kaffeesatz|Open+Sans:400,600,700|Oswald|Electrolize" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="Vincent Delevoye">
+
+    <title>CV Vincent Delevoye</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Theme CSS -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- Percircle CSS -->
+    <link rel="stylesheet" href="css/circle.css">
+
+    <!-- Custom Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
-    <script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-    <script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-    <style>
-        h1, h2, h3, h4 {
-            text-transform: uppercase;
-            font-family: 'Oswald', sans-serif;
-            font-weight: normal;
-        }
-        h1, h5 {
-            font-weight: bold;
-        }
-        .header h1 {
-            margin-bottom: 0;
-        }
-        .header h1, .header h2 {
-            margin-top: 0;
-        }
-        .dark {
-            color: #663399;
-        }
-        .light {
-            color: #999999;
-        }
-        .row.header {
-			margin-top: 20px;
-            padding-bottom: 20px;
-            border-bottom: 2px dotted #663399;
-        }
-        .sidebar {
-        }
-        .content {
-            padding-left: 20px;
-            border-left: 2px dotted #663399;
-        }
-        .block {
-			padding-bottom: 20px;
-            border-bottom: 2px dotted #663399;
-        }
-        .block.last {
-            border: none;
-        }
-		.img-thumbnail {
-			border: 2px dotted #663399;
-		}
-		.progress {
-			margin-bottom: 5px;
-			height: 18px;
-			border: none;
-			border-radius: 0;
-			box-shadow: none;
-			background: none;
-            width: 95px;
-            background: #cccccc url(images/star.png);
-		}
-		.progress-bar {
-			background-image: url(images/star.png);
-			background-size: auto;
-			-webkit-background-size: auto;
-			line-height: 18px;
-			border: none;
-			box-shadow: none;
-			-webkit-box-shadow: none;
-		}
-		.progress-bar-warning {
-			background-color: #663399;
-		}
-    </style>
+
 </head>
-<body>
-<div class="container">
-    <div class="row header">
-        <div class="col-md-2">
-            <img src="images/photoCv.jpg" alt="Vincent Delevoye" class="img-responsive img-circle img-thumbnail">
+
+<body id="page-top col-sm-12" class="index">
+
+    <!-- Navigation -->
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand" href="#page-top">Vincent Delevoye</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#competences">Compétences</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#experiences">Expériences</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#formations">Formations</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#loisirs">Loisirs</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
         </div>
-        <div class="col-md-8 col-md-offset-2">
-            <h1 class="light">Vincent <span class="dark">Delevoye</span></h1>
-            <h2 class="dark">Développeur Web</h2>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <!-- Header -->
+    <header>
+        <div class="container" id="page-top">
             <div class="row">
-                <div class="col-md-4">
-                    <span class="dark">Tél :</span>
-                    +33 6 60 21 14 23
-                </div>
-                <div class="col-md-4">
-                    <span class="dark">E-mail :</span>
-                    <a href="mailto:vincentdelevoye@gmail.com">vincentdelevoye@gmail.com</a>
+                <div class="col-sm-12">
+                    <img class="img-responsive" src="img/photo-cv.png" alt="Vincent Delevoye">
+                    <div class="intro-text">
+                        <span class="name">Vincent Delevoye</span>
+                        <hr class="star-light">
+                        <span class="skills">Développeur Web</span></br>
+                        <span class="skills">21 ans</span></br>
+                        <span class="skills">Fretin</span></br>
+                        <span class="skills">Tel: +33 6 60 21 14 23</span></br>
+                        <span class="skills">Mail: vincentdelevoye@gmail.com</span>
+                    </div>
                 </div>
             </div>
         </div>
+    </header>
+
+    <!-- Portfolio Grid Section -->
+    <section id="competences">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 text-center">
+                    <h2>Compétences professionnels</h2>
+                    <hr class="star-primary">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 row-comp-title">
+                    <h3>Développement Web et base de données</h3>
+                </div>
+            </div>
+            <div class="row row-comp">
+                <div class="col-sm-3 text-center">
+                    <div class="c100 p75">
+                        <span class="percent">75%</span>
+                        <span class="comp">HTML5</span>
+                        <div class="slice">
+                            <div class="bar"></div>
+                            <div class="fill"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3 text-center">
+                    <div class="c100 p75">
+                        <span class="percent">75%</span>
+                        <span class="comp">CSS3</span>
+                        <div class="slice">
+                            <div class="bar"></div>
+                            <div class="fill"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3 text-center">
+                    <div class="c100 p50">
+                        <span class="percent">50%</span>
+                        <span class="comp">JavaScript</span>
+                        <div class="slice">
+                            <div class="bar"></div>
+                            <div class="fill"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3 text-center">
+                    <div class="c100 p50">
+                        <span class="percent">50%</span>
+                        <span class="comp">jQuery</span>
+                        <div class="slice">
+                            <div class="bar"></div>
+                            <div class="fill"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row row-comp">
+                <div class="col-sm-3 text-center">
+                    <div class="c100 p50">
+                        <span class="percent">50%</span>
+                        <span class="comp">PHP</span>
+                        <div class="slice">
+                            <div class="bar"></div>
+                            <div class="fill"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3 text-center">
+                    <div class="c100 p50">
+                        <span class="percent">50%</span>
+                        <span class="comp">Symfony 2</span>
+                        <div class="slice">
+                            <div class="bar"></div>
+                            <div class="fill"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3 text-center">
+                    <div class="c100 p60">
+                        <span class="percent">60%</span>
+                        <span class="comp">my SQL</span>
+                        <div class="slice">
+                            <div class="bar"></div>
+                            <div class="fill"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row row-comp-title row-comp">
+                <div class="col-sm-12">
+                    <h3>Administration de serveur</h3>
+                </div>
+            </div>
+            <div class="row row-comp">
+                <div class="col-sm-3 text-center">
+                    <div class="c100 p40">
+                        <span class="percent">40%</span>
+                        <span class="comp">Linux</span>
+                        <div class="slice">
+                            <div class="bar"></div>
+                            <div class="fill"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3 text-center">
+                    <div class="c100 p40">
+                        <span class="percent">40%</span>
+                        <span class="comp">Apache 2</span>
+                        <div class="slice">
+                            <div class="bar"></div>
+                            <div class="fill"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3 text-center">
+                    <div class="c100 p40">
+                        <span class="percent">40%</span>
+                        <span class="comp">Jenkins</span>
+                        <div class="slice">
+                            <div class="bar"></div>
+                            <div class="fill"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3 text-center">
+                    <div class="c100 p40">
+                        <span class="percent">40%</span>
+                        <span class="comp">Sonar</span>
+                        <div class="slice">
+                            <div class="bar"></div>
+                            <div class="fill"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row row-comp-title row-comp">
+                <div class="col-sm-12">
+                    <h3>Autre</h3>
+                </div>
+            </div>
+            <div class="row row-comp">
+                <div class="col-sm-3 text-center">
+                    <div class="c100 p30">
+                        <span class="percent">30%</span>
+                        <span class="comp">Photoshop</span>
+                        <div class="slice">
+                            <div class="bar"></div>
+                            <div class="fill"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3 text-center">
+                    <div class="c100 p50">
+                        <span class="percent">50%</span>
+                        <span class="comp">Intégration</span><span class="retour-ligne-comp">continue</span>
+                        <div class="slice">
+                            <div class="bar"></div>
+                            <div class="fill"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="success" id="experiences">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 text-center">
+                    <h2>Expériences Professionnels</h2>
+                    <hr class="star-light">
+                </div>
+            </div>
+            <div class="row white-job">
+                <div class="col-sm-12">
+                        <h3 class="text-center">Décathlon Services</h3>
+                        <h4 class="text-center">Développeur / 2015 (2 mois) - stage</h4>
+                        <p>
+                            Mise en place de l'intégration continue pour les projets Trocathlon et un site de location de matériel [Plus en ligne]
+                            <br> - Création des tests Behat
+                            <br> - Création des jobs sur Jenkins
+                            <br> - Refactoring à l'aide de l'outil SonarQube
+                        </p>
+                    <div class="row">
+                        <span class="label">Symfony 2</span>
+                        <span class="label">My SQL</span>
+                        <span class="label">Git</span>
+                        <span class="label">Behat</span>
+                        <span class="label">Jenkins</span>
+                    </div>
+                </div>
+            </div>
+            <div class="row white-job">
+                <div class="col-sm-12">
+                        <h3 class="text-center">Trans-Ghestem</h3>
+                        <h4 class="text-center">Développeur / 2016 (2 mois) - stage</h4>
+                        <p>
+                            Création du site de l'entreprise <a href="http://www.ghestem.fr" class="underline-a">Trans-Ghestem</a>
+                        </p>
+                    <div class="row">
+                        <span class="label">Wordpress</span>
+                        <span class="label">HTML</span>
+                        <span class="label">CSS</span>
+                        <span class="label">JavaScript</span>
+                        <span class="label">PHP</span>
+                        <span class="label">jQuery</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row white-job">
+                <div class="col-sm-12">
+                    <h3 class="text-center">Leroy Merlin</h3>
+                    <h4 class="text-center">Mise en rayon / 2016 (2 mois) - job d'été</h4>
+                    <p>
+                       Mise en rayon
+                    </p>
+                </div>
+            </div>            
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="formations">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 text-center">
+                    <h2>Formations</h2>
+                    <hr class="star-primary">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-3 text-center">
+                    <h3>BTS WEB et DIGITAL</h3>
+                    <h4>2ème année</h4>
+                    <h4>EFFICOM Lille</h4>
+                    <h4>2016 > 2017</h4>
+                </div>
+                <div class="col-sm-3 text-center">
+                    <h3>Associate of Science</h3>
+                    <h4>1ère et 2ème année</h4>
+                    <h4>Supinfo Lille</h4>
+                    <h4>2014 > 2016</h4>
+                </div>
+                <div class="col-sm-3 text-center">
+                    <h3>BTS CRSA</h3>
+                    <h4>1ère année</h4>
+                    <h4>Lycée Baggio Lille</h4>
+                    <h4>2013 > 2014</h4>
+                </div>
+                <div class="col-sm-3 text-center">
+                    <h3>Bac Pro ELEEC</h3>
+                    <h4>Lycée les Hauts de Flandre Seclin</h4>
+                    <h4>2011 > 2013</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="success" id="loisirs">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 text-center">
+                    <h2>Loisirs</h2>
+                    <hr class="star-light">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-3 text-center">
+                    <img src="img/basket.png" alt="">
+
+                    <h3>Sport</h3>
+                </div>
+                <div class="col-sm-3 text-center">
+                    <img src="img/technologie.png" alt="">
+                    <h3>Nouvelles Technologies</h3>
+                </div>
+                <div class="col-sm-3 text-center">
+                    <img src="img/informatique.png" alt="">
+                    <h3>Informatique</h3>
+                </div>
+                <div class="col-sm-3 text-center">
+                    <img src="img/jeux.png" alt="">
+                    <h3>Jeux-vidéos</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center">
+        <div class="footer-below">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <p>Copyright &copy; Vincent Delevoye</p>
+                    </div>
+                    <div class="col-sm-6">
+                        <a href="https://fr.linkedin.com/in/vincent-delevoye-809a35127" class="btn-social btn-outline linkedin"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+    <div class="scroll-top page-scroll hidden-sm hidden-xs hidden-lg hidden-md">
+        <a class="btn btn-primary" href="#page-top">
+            <i class="fa fa-chevron-up"></i>
+        </a>
     </div>
-    <div class="row">
-        <div class="col-md-4">
-            <div class="sidebar">
-				<div class="block">
-                    <h3 class="dark">A propos de <span class="light">Moi</span></h3>
-					<ul class="list-unstyled">
-						<li>21 ans</li>
-						<li>Fretin</li>
-					</ul>
-					<h4>Liens</h4>
-					<ul class="list-unstyled">
-						<li><i class="fa fa-user"></i> <a href="http://vincedel.github.io/" target="_blank">http://vincedel.github.io/</a></li>
-						<li><i class="fa fa-github"></i> <a href="https://github.com/vincedel" target="_blank">https://github.com/vincedel</a></li>
-					</ul>
-                </div>
-                <div class="block">
-                    <h3 class="dark">Compétences <span class="light">Professionnelles</span></h3>
-                    <h4 class="dark">Développement <span class="light">Web</span></h4>
-                    <dl class="dl-horizontal">
-                        <dt>PHP5</dt>
-                        <dd>
-							<div class="progress">
-								<div class="progress-bar progress-bar-warning progress-bar-striped" style="width: 50%">
-									<span class="sr-only">50%</span>
-								</div>
-							</div>
-						</dd>
-						<dt>Symfony 2</dt>
-                        <dd>
-							<div class="progress">
-								<div class="progress-bar progress-bar-warning progress-bar-striped" style="width: 50%">
-									<span class="sr-only">50%</span>
-								</div>
-							</div>						
-						</dd>
-						<dt>JavaScript</dt>
-                        <dd>
-							<div class="progress">
-								<div class="progress-bar progress-bar-warning progress-bar-striped" style="width: 50%">
-									<span class="sr-only">50%</span>
-								</div>
-							</div>
-						</dd>
-						<dt>Python</dt>
-						<dd>
-							<div class="progress">
-								<div class="progress-bar progress-bar-warning progress-bar-striped" style="width: 50%">
-									<span class="sr-only">50%</span>
-								</div>
-							</div>
-						</dd>
-						<dt>C#\C++</dt>
-						<dd>
-							<div class="progress">
-								<div class="progress-bar progress-bar-warning progress-bar-striped" style="width: 20%">
-									<span class="sr-only">20%</span>
-								</div>
-							</div>
-						</dd>
-                        <dt>Git</dt>
-                        <dd>
-                            <div class="progress">
-                                <div class="progress-bar progress-bar-warning progress-bar-striped" style="width: 50%">
-                                    <span class="sr-only">50%</span>
-                                </div>
-                            </div>
-                        </dd>
-                        <dt>Behat</dt>
-                        <dd>
-                            <div class="progress">
-                                <div class="progress-bar progress-bar-warning progress-bar-striped" style="width: 80%">
-                                    <span class="sr-only">80%</span>
-                                </div>
-                            </div>
-                        </dd>
-                    </dl>
-					<hr />
-					<h4 class="dark">Bases de <span class="light">données</span></h4>
-                    <dl class="dl-horizontal">
-                        <dt>MySQL</dt>
-                        <dd>
-							<div class="progress">
-								<div class="progress-bar progress-bar-warning progress-bar-striped" style="width: 60%">
-									<span class="sr-only">60%</span>
-								</div>
-							</div>
-						</dd>
-                    </dl>
-					<hr />
-					<h4 class="dark">Administration de <span class="light">Serveur</span></h4>
-                    <dl class="dl-horizontal">
-                        <dt>Linux Ubuntu / Debian</dt>
-                        <dd>
-							<div class="progress">
-								<div class="progress-bar progress-bar-warning progress-bar-striped" style="width: 50%">
-									<span class="sr-only">50%</span>
-								</div>
-							</div>
-						</dd>
-						<dt>Apache 2</dt>
-                        <dd>
-							<div class="progress">
-								<div class="progress-bar progress-bar-warning progress-bar-striped" style="width: 40%">
-									<span class="sr-only">40%</span>
-								</div>
-							</div>
-						</dd>
-                        <dt>Jenkins</dt>
-                        <dd>
-							<div class="progress">
-								<div class="progress-bar progress-bar-warning progress-bar-striped" style="width: 50%">
-									<span class="sr-only">50%</span>
-								</div>
-							</div>
-						</dd>
-						<dt>Sonar</dt>
-                        <dd>
-							<div class="progress">
-								<div class="progress-bar progress-bar-warning progress-bar-striped" style="width: 40%">
-									<span class="sr-only">40%</span>
-								</div>
-							</div>
-						</dd>
-                    </dl>
-					<hr />
-					<h4 class="dark">Design</h4>
-                    <dl class="dl-horizontal">
-                        <dt>HTML5</dt>
-                        <dd>
-							<div class="progress">
-								<div class="progress-bar progress-bar-warning progress-bar-striped" style="width: 60%">
-									<span class="sr-only">60%</span>
-								</div>
-							</div>
-						</dd>
-						<dt>CSS3</dt>
-                        <dd>
-							<div class="progress">
-								<div class="progress-bar progress-bar-warning progress-bar-striped" style="width: 60%">
-									<span class="sr-only">60%</span>
-								</div>
-							</div>
-						</dd>
-                        
-						<dt>Photoshop</dt>
-                        <dd>
-							<div class="progress">
-								<div class="progress-bar progress-bar-warning progress-bar-striped" style="width: 20%">
-									<span class="sr-only">20%</span>
-								</div>
-							</div>
-						</dd>
-                    </dl>
-					<hr />
-					<h4 class="dark">Gestion de <span class="light">projet</span></h4>
-                    <dl class="dl-horizontal">
-						<dt>Intégration continue</dt>
-                        <dd>
-							<div class="progress">
-								<div class="progress-bar progress-bar-warning progress-bar-striped" style="width: 50%">
-									<span class="sr-only">50%</span>
-								</div>
-							</div>
-						</dd>
-                    </dl>
-                </div>
-                <div class="block last">
-                    <h3 class="dark">Loisirs</h3>
-                    <ul>
-                        <li>Sport en général (Football/Basket-Ball plus particulièrement)</li>
-                        <li>Nouvelles technologies</li>
-                        <li>Informatique</li>
-                        <li>Jeux vidéos</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-8">
-            <div class="content">
-                <div class="block">
-                    <h3 class="dark">Expériences <span class="light">Professionnelles</span></h3>
-					<img src="images/decathlon.jpg" alt="Décathlon Services" class="pull-right img-responsive" />
-                    <h4>Décathlon Services</h4>
-                    <h5>Développeur /// 2015 (2 mois) - Stage</h5>
-                    <p>
-                        <i>Mise en place de l'intégration continue pour les projets <a href="https://www.trocathlon.fr" target="_blank">Trocathlon</a> et un site de location de matériel [Plus en ligne]</i>
-                        <br />
-						Création des tests Behat
-						<br />
-						Création des jobs sur Jenkins
-						<br />
-						Refactoring à l'aide de l'outil SonarQube
-                    </p>
-                    <span class="label label-info">Symfony2</span>
-					<span class="label label-success">MySQL</span>
-                    <span class="label label-primary">Git</span>
-                    <span class="label label-primary">Behat</span>
-					<span class="label label-primary">Jenkins</span>
-					<hr />
-                    <h4>Projets d'étude /// 2013 à 2015</h4>
-                    <p>
-                        Développement du jeu MasterMind et Takuzu sous Python
-						<br />
-						Projet de cryptographie : encrypter et décrypter une image
-                    </p>
-                    <span class="label label-info">Python</span>
-                    <hr />
-                    <img src="images/leroy_merlin.png" alt="Leroy Merlin" class="pull-right img-responsive" />
-                    <h4>Leroy Merlin</h4>
-					<h5>Mise en Rayon /// 2016 (2 mois) - Job d'été</h5>
-                    <p>
-						<i>Mise en rayon</i>
-                    </p>
-					<hr />
-					<h4>Autinor (Avelin)</h4>
-					<h5>Electricien /// 2013 (1 mois) - Stage</h5>
-					<p>
-						<i>Configuration de commande pour ascenseurs</i>
-					</p>
-					<hr />
-					<h4>Menelec (Wahagnies)</h4>
-					<h5>Electricien /// 2012 (2 mois) - Stage</h5>
-					<p>
-						<i>Travaux d’électricité</i>
-					</p>
-                </div>
-                <div class="block last">
-                    <h3 class="dark">Formation <span class="light">Éducation</span></h3>
-                    <h4>BTS Web /// 2<sup>ème</sup>année</h4>
-                    <h5>EFFICOM Lille /// 2016 &rsaquo; 2017</h5>
-                    <hr />
-					<h4>Associate of Science /// 1<sup>ère</sup> et 2<sup>ème</sup>année</h4>
-					<h5>SUPINFO Lille /// 2014 &rsaquo; 2016</h5>
-					<hr />
-					<h4>BTS CRSA (Electrotechnique) /// 1<sup>ère</sup> année</h4>
-					<h5>Lycée César Baggio Lille /// 2013 &rsaquo; 2014</h5>
-					<hr />
-					<h4>Baccalauréat Professionnel ELEEC (Electrotechnique)</h4>
-					<h5>Lycée César Baggio Lille /// 2010 &rsaquo; 2013</h5>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.js"></script>
+
+    <!-- Percircle JavaScript -->
+    <script src="js/percircle.js"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="js/freelancer.js"></script>
+
 </body>
+
 </html>
