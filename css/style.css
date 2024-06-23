@@ -413,8 +413,17 @@ fieldset[disabled] .btn-success.active {
 }
 .row-comp{
   margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
 }
-
+.row-comp .col-comp {
+  width: 25%;
+}
+section .c100 {
+  float: initial;
+  margin: 0 auto 0.1em auto;
+}
 .list-group-item{
   color: #18bc9c;
 }
@@ -455,6 +464,11 @@ fieldset[disabled] .btn-success.active {
     margin-top: 10px;
   }
 }
+@media all and (max-width: 650px){
+  .row-comp .col-comp {
+    width: 33%;
+  }
+}
 @media all and (max-width: 576px){
   section h2{
     font-size: 2em;
@@ -464,6 +478,9 @@ fieldset[disabled] .btn-success.active {
   }
   h4{
     font-size: 1.3em;
+  }
+  .row-comp .col-comp {
+    width: 50%;
   }
 }
 .underline-a{
