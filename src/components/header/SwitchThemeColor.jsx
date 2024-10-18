@@ -3,7 +3,7 @@ import React from 'react';
 import { faMoon, faSun } from "@fortawesome/free-solid-svg-icons";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 
-function SwitchThemeColor(props) {
+function SwitchThemeColor({toggleTheme}) {
     const theme = 'light';
     let icon = faSun
 
@@ -12,7 +12,7 @@ function SwitchThemeColor(props) {
     }
 
     return (
-        <button className="text-lg font-body">
+        <button className="text-lg font-body" onClick={toggleTheme}>
             <FontAwesomeIcon icon={icon} />
         </button>
     );

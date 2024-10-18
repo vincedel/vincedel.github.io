@@ -4,7 +4,7 @@ import photoCV from './../../../public/img/photo-cv.png'
 import SwitchThemeColor from "./SwitchThemeColor";
 import Menu from "./Menu";
 
-function Header() {
+function Header({toggleTheme}) {
     return (
         <header className="flex w-full gap-px h-20">
             <div className="cell-empty"></div>
@@ -16,7 +16,7 @@ function Header() {
             </div>
             <div className="cell double menu items-center">
                 <Menu/>
-                <SwitchThemeColor/>
+                <SwitchThemeColor toggleTheme={toggleTheme}/>
             </div>
             <div className="cell-empty"></div>
         </header>
