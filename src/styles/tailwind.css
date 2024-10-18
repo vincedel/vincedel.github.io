@@ -1,0 +1,45 @@
+@import url('https://fonts.cdnfonts.com/css/strawford');
+@import url('https://fonts.cdnfonts.com/css/formula-condensed');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+    body{
+        @apply font-strawford text-darkBlue
+    }
+
+    h1, h2 {
+        @apply font-formula text-darkBlue
+    }
+
+    h3 {
+        font-size: 1.5rem;
+        @apply font-formula;
+        font-weight: 500;
+        text-transform: uppercase;
+        color: var(--mainColor);
+    }
+
+    .status-pill {
+        border: 1px solid var(--grey);
+        border-radius: 40px;
+        padding: 8px 16px;
+    }
+
+    .status-pill-icon {
+        height: 44px;
+        width: 44px;
+        border-radius: 50%;
+        color: var(--white);
+    }
+
+    .status-pill-icon.available {
+        background: linear-gradient(225.22deg, #02aabd  -.01%, #00cdac 100.08%)
+    }
+
+    .status-pill-icon.unavailable {
+        background: linear-gradient(225.22deg, #FF512F  -.01%, #DD2476 100.08%)
+    }
+}

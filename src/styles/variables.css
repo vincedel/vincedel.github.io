@@ -1,0 +1,10 @@
+:root {
+    --mainColor: #4caf50;
+    --white: #f6f9fc;
+    --grey: #d7e5f2;
+    --black: #061423;
+    --empty-cell-width: 40px;
+    --double-column: calc(65% - var(--empty-cell-width));
+    --simple-column: calc(35% - var(--empty-cell-width));
+    --title-section-width: calc(100% - (var(--empty-cell-width) * 2));
+}
