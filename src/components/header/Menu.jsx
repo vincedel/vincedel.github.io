@@ -3,6 +3,7 @@ import React, {useState} from 'react';
 import MenuItem from "./MenuItem";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
+import { menu } from "../../data/menu";
 
 
 function Menu(props) {
@@ -17,25 +18,6 @@ function Menu(props) {
         }
         setMenuOpen(!menuOpen);
     }
-
-    const menu = [
-        {
-            name: "Compétences",
-            path: "#competences"
-        },
-        {
-            name: "Expériences",
-            path: "#experiences"
-        },
-        {
-            name: "Formations",
-            path: "#formations"
-        },
-        {
-            name: "Loisirs",
-            path: "#loisirs"
-        }
-    ]
 
     let navMenuClasses = ['mr-8', 'flex', 'nav-menu', 'flex-grow'];
     if (menuOpen) {

@@ -174,3 +174,15 @@ header .cell.menu {
     color: var(--mainColor);
     scale: 1.1;
 }
+
+.text-main-color {
+    color: var(--mainColor);
+}
+
+.bg-main-color {
+    background-color: var(--mainColor);
+}
+
+.border-main-grey {
+    border-color: var(--grey);
+}

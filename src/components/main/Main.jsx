@@ -6,6 +6,7 @@ import AboutSection from "./sections/about/AboutSection";
 import { experiences } from "./../../data/experiences"
 import ExperienceSection from "./sections/experience/ExperienceSection";
 import TitleSection from "../common/TitleSection";
+import FormationSection from "./sections/formation/FormationSection";
 
 function Main() {
     return (
@@ -19,6 +20,8 @@ function Main() {
                     <ExperienceSection {...experience} index={index}/>
                 )
             })}
+            <TitleSection id="formations" title="Mes formations" />
+            <FormationSection/>
         </main>
     );
 }

@@ -8,7 +8,7 @@ function LinkButton(props) {
             {props.label}
             <span className="link-button-icons">
                 <FontAwesomeIcon className="text-2xl" icon={props.icon}/>
-                <FontAwesomeIcon className="text-2xl text-orange-500" icon={props.icon}/>
+                <FontAwesomeIcon className="text-2xl text-main-color" icon={props.icon}/>
             </span>
         </a>
     );
