@@ -1,49 +1,46 @@
-import {
-    faCss3,
-    faDocker, faGit, faGoogle,
-    faHtml5,
-    faJenkins,
-    faJs,
-    faLinux,
-    faPhp,
-    faSymfony,
-    faVuejs
-} from "@fortawesome/free-brands-svg-icons";
-import {faArrowsSpin, faInfinity} from "@fortawesome/free-solid-svg-icons";
+import { faSymfony, faVuejs, faDocker, faBitbucket, faGoogle, faWordpress, faJenkins } from "@fortawesome/free-brands-svg-icons";
 
 export const skills = [
     {
-        title: 'Développement web et base de données',
-        skills: [
-            { label: "HTML", icon: faHtml5 },
-            { label: "CSS", icon: faCss3 },
-            { label: "JavaScript", icon: faJs },
-            { label: "VueJS", icon: faVuejs },
-            { label: "PHP", icon: faPhp },
-            { label: "Symfony", icon: faSymfony },
-            { label: "Prestashop" },
-            { label: "MySql" },
-            { label: "PostgreSQL" },
-            { label: "Elasticsearch" }
-        ]
+        name: 'Symfony',
+        iconLibrary: 'fontawesome',
+        icon: faSymfony,
+        colorClass: 'bg-green-beach'
     },
     {
-        title: 'Administration de serveur',
-        skills: [
-            { label: "Linux", icon: faLinux },
-            { label: "Docker", icon: faDocker },
-            { label: "Jenkins", icon: faJenkins },
-            { label: "SonarQube" },
-            { label: "CI / CD", icon: faInfinity },
-            { label: "GCloud", icon: faGoogle }
-        ]
+        name: 'Prestashop',
+        iconLibrary: '',
+        icon: '',
+        colorClass: 'bg-no-mans'
     },
     {
-        title: 'Autre',
-        skills: [
-            { label: "Photoshop" },
-            { label: "Méthodologie Agile", icon: faArrowsSpin },
-            { label: "Git", icon: faGit }
-        ]
+        name: 'VueJS',
+        iconLibrary: 'fontawesome',
+        icon: faVuejs,
+        colorClass: 'bg-orbit'
     },
+    {
+        name: 'Docker',
+        iconLibrary: 'fontawesome',
+        icon: faDocker,
+        colorClass: 'bg-toxic'
+    },
+    {
+        name: 'Bitbucket Pipeline',
+        iconLibrary: 'fontawesome',
+        icon: faBitbucket,
+        colorClass: 'bg-exotic'
+    },
+    {
+        name: 'Google Cloud',
+        iconLibrary: 'fontawesome',
+        icon: faGoogle,
+        colorClass: 'bg-antarctica'
+    },
+    {
+        name: 'Wordpress',
+        iconLibrary: 'fontawesome',
+        icon: faWordpress,
+        colorClass: 'bg-sweet-morning'
+    }
 ]

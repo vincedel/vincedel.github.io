@@ -103,8 +103,8 @@ header .cell.menu {
 }
 
 .techno-badge {
-    height: 90px;
     width: 90px;
+    aspect-ratio : 1 / 1;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -120,9 +120,8 @@ header .cell.menu {
 .techno-badge-icon-container {
     color: var(--white);
     background-color: hsla(0,0%,6%,.5);
-    /*backdrop-filter: blur(20px);*/
-    height: 60%;
     width: 60%;
+    aspect-ratio : 1 / 1;
     font-size: 35px;
     display: flex;
     align-items: center;
@@ -146,6 +145,25 @@ header .cell.menu {
 .techno-badge:hover .techno-badge-label {
     opacity: 1;
     bottom: -15px;
+}
+
+.skills-badge-container {
+    width: calc(25% - 2rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills-badge-container .techno-badge {
+    width: 120px;
+}
+
+.skills-badge-container .techno-badge .techno-badge-icon-container {
+    font-size: 48px;
+}
+
+.skills-badge-container .techno-badge .techno-badge-label {
+    font-size: 1.125rem;
 }
 
 .menu nav {

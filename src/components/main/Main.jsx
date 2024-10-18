@@ -7,6 +7,7 @@ import { experiences } from "./../../data/experiences"
 import ExperienceSection from "./sections/experience/ExperienceSection";
 import TitleSection from "../common/TitleSection";
 import FormationSection from "./sections/formation/FormationSection";
+import SkillSection from "./sections/skill/SkillSection";
 
 function Main() {
     return (
@@ -22,6 +23,8 @@ function Main() {
             })}
             <TitleSection id="formations" title="Mes formations" />
             <FormationSection/>
+            <TitleSection id="competences" title="Mes compétences" />
+            <SkillSection/>
         </main>
     );
 }

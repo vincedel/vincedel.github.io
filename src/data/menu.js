@@ -9,7 +9,7 @@ export const menu = [
     },
     {
         name: "Compétences",
-        path: "#competences"
+        path: "#skills"
     },
     {
         name: "Loisirs",
