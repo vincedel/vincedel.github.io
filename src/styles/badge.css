@@ -16,7 +16,7 @@
 }
 
 .techno-badge-icon-container {
-    color: var(--white);
+    color: var(--main-white);
     background-color: hsla(0,0%,6%,.5);
     width: 60%;
     aspect-ratio : 1 / 1;
@@ -35,7 +35,7 @@
     border-radius: 5px;
     font-size: 0.85rem;
     padding: 4px;
-    color: var(--white);
+    color: var(--main-white);
     text-wrap: nowrap;
     bottom: 20%;
 }

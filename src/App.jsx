@@ -32,7 +32,7 @@ function App() {
 
     return (
         <div className={theme} id="home">
-            <Header toggleTheme={toggleTheme}/>
+            <Header theme={theme} toggleTheme={toggleTheme}/>
             <Main/>
             <Footer/>
         </div>

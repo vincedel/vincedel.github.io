@@ -6,12 +6,14 @@
 @tailwind utilities;
 
 @layer base{
-    body{
-        @apply font-strawford text-darkBlue
+    #home{
+        @apply font-strawford;
+        color: var(--theme-color);
     }
 
     h1, h2 {
-        @apply font-formula text-darkBlue
+        @apply font-formula;
+        color: var(--theme-color);
     }
 
     h3 {
@@ -32,7 +34,7 @@
         height: 44px;
         width: 44px;
         border-radius: 50%;
-        color: var(--white);
+        color: var(--theme-background);
     }
 
     .status-pill-icon.available {

@@ -1,6 +1,6 @@
 .menu .nav-menu button {
     --s: 19px; /* control the size */
-    --c: var(--black); /* the color */
+    --c: var(--theme-color); /* the color */
 
     height: var(--s);
     aspect-ratio: 1;

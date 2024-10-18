@@ -3,8 +3,7 @@ import React from 'react';
 import { faMoon, faSun } from "@fortawesome/free-solid-svg-icons";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 
-function SwitchThemeColor({toggleTheme}) {
-    const theme = 'light';
+function SwitchThemeColor({theme, toggleTheme}) {
     let icon = faSun
 
     if (theme == 'dark') {
