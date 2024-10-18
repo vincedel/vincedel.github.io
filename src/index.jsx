@@ -8,5 +8,6 @@ import './styles/style.css';
 import './styles/background.css';
 import './styles/burger-menu.css';
 import './styles/badge.css';
+import './styles/backdrop.css';
 
 ReactDOM.render(<App />, document.getElementById('root'));

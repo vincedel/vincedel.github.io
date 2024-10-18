@@ -21,20 +21,28 @@ function getUserThemeClass() {
 
 function App() {
     const [ theme, setTheme ] = useState(getUserThemeClass());
+    const [ backdropClassOpen, setBackdropOpen ] = useState('')
 
     const toggleTheme = () => {
-        setTheme(prevTheme => (prevTheme === 'light' ? 'dark' : 'light'));
+        setBackdropOpen('backdrop-open');
+        setTimeout(() => {
+            setTheme(prevTheme => (prevTheme === 'light' ? 'dark' : 'light'));
+            setBackdropOpen('');
+        }, "750");
+
     };
 
     useEffect(() => {
         localStorage.setItem('theme', theme);
     }, [theme]);
 
+    console.log([theme, backdropClassOpen])
     return (
-        <div className={theme} id="home">
+        <div className={[theme, backdropClassOpen].join(" ")} id="home">
             <Header theme={theme} toggleTheme={toggleTheme}/>
             <Main/>
             <Footer/>
+            <div className="backdrop"></div>
         </div>
     );
 }
