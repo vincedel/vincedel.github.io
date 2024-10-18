@@ -1,17 +1,17 @@
 // src/App.jsx
 import React from 'react';
-import { formations } from "./../../../../data/formations"
-import FormationItem from "./FormationItem";
+import { trainings } from "./../../../../data/trainings"
+import TrainingItem from "./TrainingItem";
 
-function FormationSection() {
+function TrainingSection() {
     return (
-        <section className="flex gap-px formations">
+        <section className="flex gap-px training">
             <div className="cell-empty"></div>
             <div className="cell cell-title padding-40px flex-col">
                 <ol className="relative border-s border-main-grey">
-                    {formations.map((formation) => {
+                    {trainings.map((training) => {
                         return (
-                            <FormationItem {...formation} />
+                            <TrainingItem {...training} />
                         );
                     })}
                 </ol>
@@ -21,4 +21,4 @@ function FormationSection() {
     );
 }
 
-export default FormationSection;
+export default TrainingSection;

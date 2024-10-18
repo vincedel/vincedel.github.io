@@ -1,10 +1,7 @@
 // src/App.jsx
 import React from 'react';
 
-function FormationItem(props) {
-
-    console.log(props)
-
+function TrainingItem(props) {
     return (
         <li className="mb-10 ms-4">
             <div
@@ -27,4 +24,4 @@ function FormationItem(props) {
     );
 }
 
-export default FormationItem;
+export default TrainingItem;

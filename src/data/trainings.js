@@ -1,4 +1,4 @@
-export const formations = [
+export const trainings = [
     {
         title: 'Mastère Expert en Ingénierie Informatique',
         year: "4 / 5ème année",

@@ -7,5 +7,6 @@ import './styles/tailwind.css';
 import './styles/style.css';
 import './styles/background.css';
 import './styles/burger-menu.css';
+import './styles/badge.css';
 
 ReactDOM.render(<App />, document.getElementById('root'));

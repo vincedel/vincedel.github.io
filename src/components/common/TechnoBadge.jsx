@@ -7,7 +7,7 @@ function TechnoBadge(props) {
     badgeClasses.push(props.colorClass);
 
     if (props.iconLibrary == 'fontawesome') {
-        icon = <FontAwesomeIcon icon={props.icon} />
+        icon = <FontAwesomeIcon icon={props.icon}/>
     }
 
     return (
@@ -15,11 +15,19 @@ function TechnoBadge(props) {
             <div className="techno-badge-icon-container">
                 {icon}
             </div>
-            <div className="techno-badge-label">
-                {props.name}
-            </div>
+            {
+                props.name ?
+                    (
+                        <div className="techno-badge-label">
+                            {props.name}
+                        </div>
+                    )
+                    : ''
+            }
+
         </div>
-    );
+    )
+        ;
 }
 
 

@@ -5,7 +5,7 @@ export const menu = [
     },
     {
         name: "Formations",
-        path: "#formations"
+        path: "#training"
     },
     {
         name: "Compétences",
@@ -13,6 +13,6 @@ export const menu = [
     },
     {
         name: "Loisirs",
-        path: "#loisirs"
+        path: "#hobbies"
     }
 ]
