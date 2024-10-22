@@ -1,0 +1,38 @@
+:root {
+    --mainColor: #4caf50;
+    --grey: #d7e5f2;
+    --empty-cell-width: 40px;
+    --double-column: calc(65% - var(--empty-cell-width));
+    --simple-column: calc(35% - var(--empty-cell-width));
+    --title-section-width: calc(100% - (var(--empty-cell-width) * 2));
+    --main-white: #f6f9fc;
+    --main-black: #061423;
+}
+
+.light {
+    --theme-background: var(--main-white);
+    --theme-color: var(--main-black);
+}
+
+.dark {
+    --theme-background: var(--main-black);
+    --theme-color: var(--main-white);
+}
+
+@media screen and (max-width: 768px) {
+    :root {
+        --empty-cell-width: 0;
+        --double-column: 65%;
+        --simple-column: 35%;
+        --title-section-width: 100%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    :root {
+        --empty-cell-width: 0;
+        --double-column: 100%;
+        --simple-column: 100%;
+        --title-section-width: 100%;
+    }
+}

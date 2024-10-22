@@ -1,0 +1,61 @@
+.experience-description p:not(:last-child) {
+    margin-bottom: 1rem;
+}
+
+.experience-description p a {
+    transition: 0.25s ease-in-out;
+}
+
+.experience-description p a:hover {
+    color: var(--mainColor);
+}
+
+.experience-description ol {
+    list-style: auto;
+    padding-left: 3rem;
+}
+
+.experience-description ol > li {
+    padding-bottom: 1rem;
+}
+
+.experience-description ul {
+    list-style: circle;
+    padding-left: 3rem;
+}
+
+.experience-title span {
+    line-height: 30px;
+    padding-bottom: 6px;
+    margin-left: 0.5rem;
+}
+
+@media screen and (max-width: 768px) {
+    .experience-title {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .experience-title span {
+        margin-left: 0;
+    }
+
+    .experience-contract {
+        flex-direction: column;
+    }
+
+    .experience-description ul, .experience-description ol {
+        padding-left: 2rem;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .experience {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .experience .cell, .experience .cell.double {
+        width: 100%;
+    }
+}
