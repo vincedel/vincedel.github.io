@@ -4,7 +4,7 @@ import Status from "./Status";
 
 function AvailableSection() {
     return (
-        <section className="flex gap-px min-h-[300px]" id="description">
+        <section className="flex gap-px min-h-[300px]" id="available">
             <div className="cell-empty"></div>
             <div className="cell double main-svg">
             </div>

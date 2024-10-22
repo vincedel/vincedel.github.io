@@ -96,38 +96,6 @@ html {
     right: 0;
 }
 
-.experience-description p:not(:last-child) {
-    margin-bottom: 1rem;
-}
-
-.experience-description p a {
-    transition: 0.25s ease-in-out;
-}
-
-.experience-description p a:hover {
-    color: var(--mainColor);
-}
-
-.experience-description ol {
-    list-style: auto;
-    padding-left: 3rem;
-}
-
-.experience-description ol > li {
-    padding-bottom: 1rem;
-}
-
-.experience-description ul {
-    list-style: circle;
-    padding-left: 3rem;
-}
-
-.experience-title span {
-    line-height: 30px;
-    padding-bottom: 6px;
-    margin-left: 0.5rem;
-}
-
 .text-main-color {
     color: var(--mainColor);
 }
@@ -142,4 +110,39 @@ html {
 
 .hobbies .cell {
     flex-wrap: nowrap;
+}
+
+@media screen and (max-width: 768px) {
+    html {
+        font-size: 14px;
+    }
+
+    .padding-40px {
+        padding: 20px;
+    }
+
+    .cell-empty {
+        display: none;
+    }
+}
+@media screen and (max-width: 576px) {
+    .main-svg {
+        display: none;
+    }
+
+    .cell-title.main-svg {
+        display: flex;
+    }
+
+    #description {
+        min-height: 250px;
+    }
+
+    #available {
+        min-height: 150px;
+    }
+
+    #about {
+        flex-direction: column;
+    }
 }

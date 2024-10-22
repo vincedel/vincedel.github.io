@@ -36,7 +36,7 @@ function ExperienceDescription(props) {
             </div>
 
             <div>
-                <div className="flex justify-between mb-4 mt-4">
+                <div className="flex justify-between mb-4 mt-4 experience-contract">
                     <p>Poste: {props.positionHeld}</p>
                     <p>Type de contrat: {props.contractType}</p>
                 </div>

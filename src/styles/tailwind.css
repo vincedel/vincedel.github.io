@@ -44,4 +44,10 @@
     .status-pill-icon.unavailable {
         background: linear-gradient(225.22deg, #FF512F  -.01%, #DD2476 100.08%)
     }
+
+    @media screen and (max-width: 576px) {
+        #description h1 {
+            font-size: 5rem;
+        }
+    }
 }

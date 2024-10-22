@@ -1,4 +1,8 @@
 
+header {
+    z-index: 10;
+}
+
 header .cell.name {
     padding: 8px 40px;
 }
@@ -42,7 +46,6 @@ header .cell.menu {
 
 header.scrolled {
     position: fixed;
-    z-index: 10;
     background-color: var(--grey);
 }
 
@@ -57,4 +60,82 @@ header.scrolled .cell, header.scrolled .cell-empty {
 
 header.scrolled .menu .nav-menu button {
     --c: var(--theme-background);
+}
+
+@media screen and (max-width: 768px) {
+    header .cell.name {
+        width: auto;
+    }
+
+    header .cell.name span {
+        display: none;
+    }
+
+    header .cell.name, header .cell.menu {
+        padding: 8px 20px;
+    }
+
+    header .cell.menu {
+        width: auto;
+        flex-grow: 1;
+    }
+
+    .nav-menu {
+        margin-right: 1rem;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .nav-menu {
+        justify-content: end;
+    }
+
+    .menu nav {
+        position: absolute;
+        z-index: -1;
+        left: 0;
+        width: 100%;
+        top: -80px;
+        padding: 1rem 20px;
+        transition-property: top, opacity;
+        transition-duration: 0.5s;
+        transition-timing-function: ease-in-out;
+        opacity: 0;
+        border-top: 1px solid var(--grey);
+    }
+
+    .menu nav ul {
+        flex-direction: column;
+        position: unset;
+        row-gap: 1rem;
+        column-gap: unset;
+    }
+
+    .menu .nav-menu.open nav {
+        top: 70px;
+        opacity: 1;
+    }
+
+    header nav, header nav {
+        background-color: var(--theme-background);
+        color: var(--theme-color);
+    }
+
+    header {
+        background-color: var(--grey);
+    }
+
+    header.scrolled {
+        background-color: var(--grey);
+    }
+
+    header.scrolled nav, header.scrolled nav {
+        background-color: var(--theme-color);
+        color: var(--theme-background);
+    }
+
+    .menu .nav-menu nav ul li:hover {
+        color: unset;
+        scale: unset;
+    }
 }

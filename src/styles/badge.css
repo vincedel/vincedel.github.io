@@ -82,3 +82,45 @@
 .hobbies .techno-badge .techno-badge-label {
     font-size: 1.125rem;
 }
+
+@media screen and (max-width: 768px) {
+    .techno-badge {
+        width: 80px;
+    }
+
+    .experience .techno-container {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .experience .techno-container {
+        justify-content: flex-start;
+    }
+
+    .techno-badge {
+        width: 90px;
+    }
+
+    .hobbies .hobbies-badge-content{
+        min-width: 90px;
+    }
+
+    .hobbies .techno-badge .techno-badge-icon-container {
+        font-size: 32px;
+    }
+
+    .skills-badge-container {
+        width: calc(33% - 2rem);
+    }
+
+    .skills-badge-container .techno-badge {
+        width: 90px;
+    }
+
+    .skills-badge-container .techno-badge .techno-badge-icon-container{
+        font-size: 32px;
+    }
+}
+
+

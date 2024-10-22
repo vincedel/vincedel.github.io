@@ -1,11 +1,15 @@
 import React from 'react';
 
-function handleClick(event) {
+function handleClick(event, setMenuOpen) {
     const anchor = event.target.getAttribute('href');
     const anchorElement = document.getElementById(anchor.substring(1));
 
     if (anchorElement) {
         event.preventDefault();
+        if (window.innerWidth <= 576) {
+            setMenuOpen(false);
+        }
+
         const offsetTop = anchorElement.offsetTop;
         let marge = 160;
 
@@ -17,12 +21,14 @@ function handleClick(event) {
     }
 }
 
-function MenuItem({ isActive, path, name }) {
+function MenuItem({ isActive, path, name, setMenuOpen }) {
     const className = isActive ? 'active' : '';
 
     return (
         <li>
-            <a onClick={handleClick} href={path} className={className}>{name}</a>
+            <a onClick={(event) => {
+                handleClick(event, setMenuOpen);
+            }} href={path} className={className}>{name}</a>
         </li>
     );
 }

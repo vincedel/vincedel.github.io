@@ -18,3 +18,21 @@
     --theme-background: var(--main-black);
     --theme-color: var(--main-white);
 }
+
+@media screen and (max-width: 768px) {
+    :root {
+        --empty-cell-width: 0;
+        --double-column: 65%;
+        --simple-column: 35%;
+        --title-section-width: 100%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    :root {
+        --empty-cell-width: 0;
+        --double-column: 100%;
+        --simple-column: 100%;
+        --title-section-width: 100%;
+    }
+}

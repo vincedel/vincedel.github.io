@@ -61,7 +61,7 @@ function Menu(props) {
                 <ul className="flex gap-x-3">
                     {menu.map((link) => {
                         return (
-                            <MenuItem {...link} key={link.path} isActive={activeMenuItem === link.path} />
+                            <MenuItem setMenuOpen={setMenuOpen} {...link} key={link.path} isActive={activeMenuItem === link.path} />
                         );
                     })}
                 </ul>
