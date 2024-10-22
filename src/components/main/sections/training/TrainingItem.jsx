@@ -9,15 +9,18 @@ function TrainingItem(props) {
             ></div>
             <time
                 dateTime={props.beginDate.toLocaleString('default', { year: "numeric" })}
-                className="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500"
+                className="mb-1 text-sm font-normal leading-none"
             >
                 {props.beginDate.toLocaleString('default', { year: "numeric" })}
             </time>
-            <time dateTime={props.endDate.toLocaleString('default', { year: "numeric" })} className="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
+            <time
+                dateTime={props.endDate.toLocaleString('default', { year: "numeric" })}
+                className="mb-1 text-sm font-normal leading-none"
+            >
                  - {props.endDate.toLocaleString('default', { year: "numeric" })}
             </time>
             <h3>{props.title}</h3>
-            <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
+            <p className="mb-4 text-base font-normal">
                 {props.school} - {props.year}
             </p>
         </li>
