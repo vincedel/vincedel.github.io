@@ -1,4 +1,6 @@
+import React from 'react';
 import { faSymfony, faVuejs, faDocker, faBitbucket, faGoogle, faWordpress, faJenkins } from "@fortawesome/free-brands-svg-icons";
+import {PrestashopIcon} from "../icons/PrestashopIcon";
 
 export const skills = [
     {
@@ -9,8 +11,8 @@ export const skills = [
     },
     {
         name: 'Prestashop',
-        iconLibrary: '',
-        icon: '',
+        iconLibrary: 'custom',
+        icon: (<PrestashopIcon/>),
         colorClass: 'bg-no-mans'
     },
     {

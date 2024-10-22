@@ -41,7 +41,9 @@ function ExperienceDescription(props) {
                     <p>Type de contrat: {props.contractType}</p>
                 </div>
                 <h3>Description</h3>
-                {props.description}
+                <div className="experience-description">
+                    {props.description}
+                </div>
             </div>
         </div>
     );

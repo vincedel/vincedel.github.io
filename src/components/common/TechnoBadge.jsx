@@ -8,6 +8,8 @@ function TechnoBadge(props) {
 
     if (props.iconLibrary == 'fontawesome') {
         icon = <FontAwesomeIcon icon={props.icon}/>
+    } else if (props.iconLibrary == 'custom') {
+        icon = props.icon
     }
 
     return (
