@@ -1,0 +1,60 @@
+
+header .cell.name {
+    padding: 8px 40px;
+}
+
+header .cell.menu {
+    padding: 8px 40px;
+    justify-content: end;
+}
+
+.menu nav {
+    overflow: hidden;
+    width: auto;
+    flex-grow: 1;
+}
+
+.menu nav ul {
+    opacity: 0;
+    position: absolute;
+    transition-property: right, opacity;
+    transition-duration: 0.5s;
+    right: -348px;
+}
+
+.menu .nav-menu.open nav ul {
+    opacity: 1;
+    right: 1rem;
+}
+
+.menu .nav-menu nav ul li {
+    transition: .25s ease-in-out;
+}
+
+.menu .nav-menu nav ul li a.active {
+    color: var(--mainColor);
+}
+
+.menu .nav-menu nav ul li:hover {
+    color: var(--mainColor);
+    scale: 1.1;
+}
+
+header.scrolled {
+    position: fixed;
+    z-index: 10;
+    background-color: var(--grey);
+}
+
+header .cell, header .cell-empty {
+    transition: 0.25s ease-in-out;
+}
+
+header.scrolled .cell, header.scrolled .cell-empty {
+    background-color: var(--theme-color);
+    color: var(--theme-background);
+}
+
+header.scrolled .menu .nav-menu button {
+    --c: var(--theme-background);
+}

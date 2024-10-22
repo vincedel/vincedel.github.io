@@ -1,12 +1,38 @@
 // src/App.jsx
 import React from 'react';
+import { useState, useEffect } from "react";
 import photoCV from './../../../public/img/photo-cv.png'
 import SwitchThemeColor from "./SwitchThemeColor";
 import Menu from "./Menu";
 
 function Header({theme, toggleTheme}) {
+    const [isScrolled, setIsScrolled] = useState(false);
+
+    const handleScroll = () => {
+        const scrollPosition = window.scrollY;
+        if (scrollPosition > 0) {
+            setIsScrolled(true);
+        } else {
+            setIsScrolled(false);
+        }
+    };
+
+    useEffect(() => {
+        window.addEventListener("scroll", handleScroll);
+
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        };
+    }, []);
+
+    let headerClasses = ['flex', 'w-full', 'gap-px', 'h-20'];
+
+    if (isScrolled) {
+        headerClasses.push('scrolled')
+    }
+
     return (
-        <header className="flex w-full gap-px h-20">
+        <header className={headerClasses.join(' ')}>
             <div className="cell-empty"></div>
             <div className="cell name">
                 <div className="flex items-center">

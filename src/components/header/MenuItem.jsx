@@ -1,21 +1,28 @@
-// src/App.jsx
 import React from 'react';
 
 function handleClick(event) {
-    let anchor = event.target.getAttribute('href');
-    let anchorElement = document.getElementById(anchor.substring(1));
+    const anchor = event.target.getAttribute('href');
+    const anchorElement = document.getElementById(anchor.substring(1));
 
     if (anchorElement) {
-        anchorElement.scrollIntoView({behavior: "smooth"});
+        event.preventDefault();
+        const offsetTop = anchorElement.offsetTop;
+        let marge = 160;
+
+        if (document.querySelector('header.scrolled')) {
+            marge = marge / 2;
+        }
+
+        window.scrollTo({top: offsetTop - marge, behavior: "smooth"});
     }
 }
 
-function MenuItem(props) {
-
+function MenuItem({ isActive, path, name }) {
+    const className = isActive ? 'active' : '';
 
     return (
         <li>
-            <a onClick={handleClick} href={props.path}>{props.name}</a>
+            <a onClick={handleClick} href={path} className={className}>{name}</a>
         </li>
     );
 }

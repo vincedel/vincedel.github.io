@@ -27,8 +27,10 @@ function App() {
         setBackdropOpen('backdrop-open');
         setTimeout(() => {
             setTheme(prevTheme => (prevTheme === 'light' ? 'dark' : 'light'));
-            setBackdropOpen('');
-        }, "750");
+            setTimeout(() => {
+                setBackdropOpen('');
+            }, "250")
+        }, "500");
 
     };
 
@@ -36,7 +38,6 @@ function App() {
         localStorage.setItem('theme', theme);
     }, [theme]);
 
-    console.log([theme, backdropClassOpen])
     return (
         <div className={[theme, backdropClassOpen].join(" ")} id="home">
             <Header theme={theme} toggleTheme={toggleTheme}/>

@@ -25,7 +25,7 @@ function Main() {
             })}
             <TitleSection id="training" title="Mes formations" />
             <TrainingSection/>
-            <TitleSection id="competences" title="Mes compétences" />
+            <TitleSection id="skills" title="Mes compétences" />
             <SkillSection/>
             <TitleSection id="hobbies" title="Mes loisirs" />
             {hobbies.map((hobby, index) => {
